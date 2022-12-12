@@ -1,0 +1,14 @@
+.main {
+    background-color: aqua;
+    width: 70%;
+    margin: 0% auto;
+}
+
+.header {
+    width: 100%;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
