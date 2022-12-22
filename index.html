@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amaryllis Studio</title>
     <link rel="stylesheet" href="main.css" />
+    <!-- Icon library to show a hamburger menu on small screens for navbar -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Google fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Boogaloo"
@@ -32,10 +39,14 @@
           </div>
           <div class="social-media-links">
             <span class="social-media-link">
-              <a href="#"><img src="images/twitter.svg" alt="Twitter link" /></a>
+              <a href="#">
+                <img src="images/twitter.svg" alt="Twitter link" />
+              </a>
             </span>
             <span class="social-media-link">
-              <a href="#"><img src="images/instagram.svg" alt="Instagram link" /></a>
+              <a href="#">
+                <img src="images/instagram.svg" alt="Instagram link" />
+              </a>
             </span>
             <span class="social-media-link">
               <a href="#"><img src="images/email.svg" alt="Email link" /></a>
@@ -50,6 +61,22 @@
           </div>
         </div>
       </div>
+
+      <div class="navbar" id="navbar">
+        <a href="index.html" class="active">HOME</a>
+        <a href="pages/illustrations.html">ILLUSTRATIONS</a>
+        <a href="pages/print-and-play.html">PRINT & PLAY</a>
+        <a href="pages/digital-games.html">DIGITAL GAMES</a>
+        <a href="pages/about.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- <hr class="divider"> -->
+      <div class="banner">
+        <img src="images/banner.jpg" alt="Mountain landscape banner" />
+      </div>
     </div>
   </body>
+  <script src="app.js"></script> 
 </html>
