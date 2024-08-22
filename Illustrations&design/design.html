@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amaryllis Studio</title>
+    <link rel="stylesheet" href="../main.css" />
+
+    <!-- Icon library to show a hamburger menu on small screens for navbar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+
+    <!-- Jquery (Temporary) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header-subpages">
+            <div class="column-1">
+            </div>
+            <div class="column-2">
+                <div class="logo">
+                    <img src="../images/amaryllis-studio-logo.png" alt="Amaryllis studio logo" />
+                </div>
+                <div class="website-title">
+                    Amaryllis Studio
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="social-media-links">
+                    <span class="social-media-link">
+                        <a href="#">
+                            <img src="../images/icons/cara-icon.png" alt="Cara link" />
+                        </a>
+                    </span>
+                    <span class="social-media-link">
+                        <a href="#">
+                            <img src="../images/icons/instagram-icon.png" alt="Instagram link" />
+                        </a>
+                    </span>
+                    <span class="social-media-link">
+                        <a href="#"><img src="../images/icons/envelope-icon.png" alt="Email link" /></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-subpages" id="navbar">
+            <a href="../index.html">HOME</a>
+            <a href="../illustrations-category.html" class="active">ILLUSTRATION & DESIGN</a>
+            <a href="../print-and-play.html">PRINT & PLAY</a>
+            <a href="../about.html">ABOUT</a>
+        </div>
+        <hr class="nav-divider">
+
+        <p class="breadcrumbs">
+            <a href="../illustrations-category.html">Illustration & Design</a>
+            <span class="breadcrumbs-seperator"> &gt; </span>
+            <span= class="active"> Illustrations </span>
+        </p>
+        <div class="gallery-grid-wrapper" id="gallery-grid">
+            <script>
+                // https://imagekit.io/blog/lazy-loading-images-complete-guide/
+                // https://web.dev/articles/lazy-loading-images
+                const imageList = document.querySelector(".gallery-grid-wrapper");
+                async function populateImageData() {
+                    const response = await fetch('../image-data.json');
+
+                    const imagesData = await response.json();
+                    let imageCounter = 0;
+                    imagesData.map((image) => {
+                        console.log(image);
+
+                        if (image.type == "design") {
+                            if (imageCounter <= 6) {
+                                let newImageDiv = document.createElement("div");
+                                let newImage = document.createElement("img");
+                                newImageDiv.className = "grid-image";
+                                newImage.src = "../" + image.file;
+                                newImage.alt = image.name;
+                                newImageDiv.appendChild(newImage);
+                                imageList.appendChild(newImageDiv);
+                                imageCounter++;
+
+                            }
+                            else {
+                                let newImageDiv = document.createElement("div");
+                                let newImage = document.createElement("img");
+                                newImageDiv.className = "grid-image";
+                                newImage.className = "lazy";
+                                newImage.src = "../images/placeholder.jpg";
+                                newImage.setAttribute('data-src', "../" + image.file);
+                                newImage.alt = image.name;
+                                newImageDiv.appendChild(newImage);
+                                imageList.appendChild(newImageDiv);
+                                imageCounter++;
+                            }
+                        }
+                    });
+                }
+
+                populateImageData();
+            </script>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer-text">&copy; Copyright Amaryllis Studio 2024</div>
+    </footer>
+
+</body>
+
+<!-- Javascripts -->
+<script src="../app.js"></script>
+
+</html>

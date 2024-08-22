@@ -28,3 +28,26 @@ function myFunction() {
 //     },
 //   })
 // }
+
+window.onload = function () {
+  var lazyloadImages = document.querySelectorAll("img.lazy");
+  console.log("Lazy load images " + lazyloadImages.length);
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          let lazyloadImage = entry.target;
+          lazyloadImage.src = lazyloadImage.dataset.src;
+          lazyloadImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyloadImage);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(lazyLoadImage) {
+      lazyImageObserver.observe(lazyLoadImage);
+    });
+  }
+}
+

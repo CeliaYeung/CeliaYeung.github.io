@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Boba bear",
+        "file": "images/gallery/boba-bear.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Crystal dragon",
+        "file": "images/gallery/crystal-dragon.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Mr Hippo",
+        "file": "images/gallery/hippo.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Pinata llama",
+        "file": "images/gallery/pinata-llama.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Bushy llama",
+        "file": "images/gallery/bushy-llama.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Beaver",
+        "file": "images/gallery/beaver.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Yellow slime",
+        "file": "images/gallery/yellow-slime.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Spike",
+        "file": "images/gallery/spike.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+]

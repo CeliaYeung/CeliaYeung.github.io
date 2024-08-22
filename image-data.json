@@ -1,0 +1,645 @@
+[
+    {
+        "name": "Lighthouse postcard",
+        "file": "images/gallery/lighthouse-postcard.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Jelly ice cream",
+        "file": "images/gallery/jelly-ice-cream.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Buzzy bee",
+        "file": "images/gallery/buzzy-bee.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Panda coffee",
+        "file": "images/gallery/panda-coffee.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Cactus",
+        "file": "images/gallery/cactus.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Easter",
+        "file": "images/gallery/easter.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Unicorn snail",
+        "file": "images/gallery/unicorn-snail.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Chinese new year 2024",
+        "file": "images/gallery/chinese-new-year-2024.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "New year 2024",
+        "file": "images/gallery/new-year-2024.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Mushroom bunny",
+        "file": "images/gallery/mushroom-bunny.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Polar bear",
+        "file": "images/gallery/polar-bear.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Night owl",
+        "file": "images/gallery/night-owl.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Snowglobe",
+        "file": "images/gallery/snow-globe.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Reindeer stocking",
+        "file": "images/gallery/reindeer-stocking.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Nutcracker bunny",
+        "file": "images/gallery/nutcracker-bunny.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Gingerbread bear",
+        "file": "images/gallery/gingerbread-bear.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Cocoa mug",
+        "file": "images/gallery/cocoa-mug.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Christmas ornament",
+        "file": "images/gallery/christmas-ornament.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Christmas tree",
+        "file": "images/gallery/christmas-tree.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Zombie bunny",
+        "file": "images/gallery/zombie-bunny.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Witch penguin",
+        "file": "images/gallery/witch-penguin.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Skeleton reaper",
+        "file": "images/gallery/skeleton-reaper.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Cute pumpkin",
+        "file": "images/gallery/cute-pumpkin.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Candy corn",
+        "file": "images/gallery/candy-corn.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Cute piggy",
+        "file": "images/gallery/cute-piggy.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Cute seal",
+        "file": "images/gallery/cute-seal.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Cute bat",
+        "file": "images/gallery/cute-bat.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Cute koala",
+        "file": "images/gallery/cute-koala.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Boba bear",
+        "file": "images/gallery/boba-bear.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Crystal dragon",
+        "file": "images/gallery/crystal-dragon.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Pinata llama",
+        "file": "images/gallery/pinata-llama.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Bushy llama",
+        "file": "images/gallery/bushy-llama.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Mr llama",
+        "file": "images/gallery/mr-llama.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Astro llama",
+        "file": "images/gallery/astro-llama.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Superhero llama",
+        "file": "images/gallery/superhero-llama.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Confused llama",
+        "file": "images/gallery/confused-llama.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Unicorn llama",
+        "file": "images/gallery/unicorn-llama.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Beaver",
+        "file": "images/gallery/beaver.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Mr Hippo",
+        "file": "images/gallery/hippo.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Marshmallow",
+        "file": "images/gallery/marshmallow.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Beaver",
+        "file": "images/gallery/beaver.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "New year 2023",
+        "file": "images/gallery/new-year-2023.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Chinese new year 2023",
+        "file": "images/gallery/chinese-new-year-2023.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Magic narwhal",
+        "file": "images/gallery/magic-narwhal.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Baby yoda",
+        "file": "images/gallery/magic-narwhal.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Quaggan",
+        "file": "images/gallery/quaggan.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Vaporeon",
+        "file": "images/gallery/vaporeon.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Mew",
+        "file": "images/gallery/mew.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Flareon",
+        "file": "images/gallery/flareon.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Celebi",
+        "file": "images/gallery/celebi.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Wooper",
+        "file": "images/gallery/wooper.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Christmas reindeer",
+        "file": "images/gallery/christmas-reindeer.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Christmas penguin",
+        "file": "images/gallery/christmas-penguin.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Christmas bunny",
+        "file": "images/gallery/christmas-bunny.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Bubble bunny",
+        "file": "images/gallery/bubble-bunny.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Bubble panda",
+        "file": "images/gallery/bubble-panda.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Bunny mage",
+        "file": "images/gallery/bunny-mage.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Fox",
+        "file": "images/gallery/fox.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Chinese-new-year-2022",
+        "file": "images/gallery/chinese-new-year-2022.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "New year 2022",
+        "file": "images/gallery/new-year-2022.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Christmas 2021",
+        "file": "images/gallery/christmas-2021.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Slime forest",
+        "file": "images/gallery/slime-forest.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Sugar bliss house",
+        "file": "images/gallery/sugar-bliss-house.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Sugar bliss city",
+        "file": "images/gallery/sugar-bliss-city.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Snack witch",
+        "file": "images/gallery/snack-witch.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Marshroom",
+        "file": "images/gallery/marshroom.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Beary float",
+        "file": "images/gallery/beary-float.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Candy fluff",
+        "file": "images/gallery/candy-fluff.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Chaos dungeon",
+        "file": "images/gallery/chaos-dungeon.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Chaos fortress",
+        "file": "images/gallery/chaos-fortress.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "King beserker",
+        "file": "images/gallery/king-beserker.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Queen mage",
+        "file": "images/gallery/queen-mage.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Assassin rook",
+        "file": "images/gallery/assassin-rook.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Bishop cleric",
+        "file": "images/gallery/bishop-cleric.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Knight archer",
+        "file": "images/gallery/knight-archer.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Knight pawn",
+        "file": "images/gallery/knight-pawn.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Halloween",
+        "file": "images/gallery/halloween.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Happy halloween",
+        "file": "images/gallery/happy-halloween.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Ghost halloween",
+        "file": "images/gallery/ghost-halloween.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Ghost broom",
+        "file": "images/gallery/ghost-broom.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Halloween slime",
+        "file": "images/gallery/halloween-slime.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Wyatt",
+        "file": "images/gallery/wyatt.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Cherry gem",
+        "file": "images/gallery/cherry-gem.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Island",
+        "file": "images/gallery/island.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Orshia background",
+        "file": "images/gallery/orshia-background.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Slime kingdom blue",
+        "file": "images/gallery/slime-kingdom-blue.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Slime kingdom purple",
+        "file": "images/gallery/slime-kingdom-purple.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Slime king",
+        "file": "images/gallery/slime-king.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Yellow slime",
+        "file": "images/gallery/yellow-slime.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Ice slime",
+        "file": "images/gallery/ice-slime.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Ghost slime",
+        "file": "images/gallery/ghost-slime.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Acid slime",
+        "file": "images/gallery/acid-slime.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Unicorn slime",
+        "file": "images/gallery/unicorn-slime.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Fire slime",
+        "file": "images/gallery/fire-slime.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Panda warrior",
+        "file": "images/gallery/panda-warrior.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Mouse mining",
+        "file": "images/gallery/mouse-mining.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Crystal",
+        "file": "images/gallery/crystal.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Orshia logo",
+        "file": "images/gallery/orshia-logo.png",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Bamboo",
+        "file": "images/gallery/bamboo.png",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Ratchet",
+        "file": "images/gallery/ratchet.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Spike",
+        "file": "images/gallery/spike.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
+        "name": "Sugar bliss model",
+        "file": "images/gallery/sugar-bliss-model.jpg",
+        "type": "3d-model",
+        "show_on_home": false
+    },
+    {
+        "name": "Candyland green",
+        "file": "images/gallery/candyland-green.jpg",
+        "type": "3d-model",
+        "show_on_home": false
+    },
+    {
+        "name": "Candyland pink",
+        "file": "images/gallery/candyland-pink.jpg",
+        "type": "3d-model",
+        "show_on_home": false
+    },
+    {
+        "name": "Scenery model",
+        "file": "images/gallery/scenery-model.jpg",
+        "type": "3d-model",
+        "show_on_home": false
+    },
+    {
+        "name": "Labello strawberry design",
+        "file": "images/gallery/labello-design-strawberry.jpg",
+        "type": "design",
+        "show_on_home": false
+    },
+    {
+        "name": "Labello blackcurrent design",
+        "file": "images/gallery/labello-design-blackcurrent.jpg",
+        "type": "design",
+        "show_on_home": false
+    }
+
+]
