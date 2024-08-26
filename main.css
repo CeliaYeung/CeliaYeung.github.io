@@ -11,9 +11,13 @@
   --medium-navy: #6c709b;
   --lavender: #9a9ad0;
   --light-pastel_lavender: #d9d9fd;
-  --pastel-purple-pink: #d79bd4;
-  --pastel-pink: #ff9ebe;
-  --pastel-orange: #ffaf99;
+  /* --pastel-purple-pink: #d79bd4; */
+  /* --pastel-pink: #ff9ebe; */
+  /* --pastel-orange: #ffaf99; */
+  --light-pastel-lavender-bg: #efefff;
+  --pastel-purple-pink: #b951b4;
+  --pastel-pink: #e2487a;
+  --pastel-orange: #f58465;
   --background-lavender: #A9A9D8;
   --dark-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
 }
@@ -86,6 +90,7 @@ path {
       font-family: 'Boogaloo';
       font-size: 32pt;
       margin-top: 30px;
+      text-wrap: nowrap;
       color: var(--navy);
     }
 
@@ -159,6 +164,7 @@ path {
       flex-basis: 80%;
       font-family: 'Boogaloo';
       font-size: 28pt;
+      text-wrap: nowrap;
       color: var(--navy);
     }
 
@@ -236,6 +242,10 @@ path {
       color: var(--navy);
       font-weight: bold;
     }
+
+    &.icon {
+      display: none;
+    }
   }
 }
 
@@ -247,41 +257,6 @@ path {
 /* Hide the link that should open and close the topnav on small screens */
 .navbar .icon {
   display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .navbar {
-    width: 100%;
-  }
-
-  .navbar a:not(:first-child) {
-    display: none;
-  }
-
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .navbar.responsive {
-    position: relative;
-  }
-
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 
 /* Divider */
@@ -783,3 +758,105 @@ path {
   }
   
 }
+
+/* Responsiveness */
+@media screen and (max-width: 1040px) {
+  .header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .website-title {
+      margin-top: 0px;
+    }
+   }
+  }
+
+  .navbar {
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--light-pastel-lavender-bg);
+    border-radius: 10px;
+  }
+
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar-subpages {
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--light-pastel-lavender-bg);
+    border-radius: 10px;
+  }
+
+  .navbar-subpages a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar-subpages a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar-subpages.responsive {
+    position: relative;
+  }
+
+  .navbar-subpages.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar-subpages.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header {
+    .column-2 {
+      .job-titles {
+        display: none;
+      }
+    }
+  }
+
+  .nav-divider {
+    display: none;
+  }
+}
+
