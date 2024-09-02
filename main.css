@@ -376,23 +376,38 @@ path {
 
 /* Grid image layout */
 .gallery-grid-wrapper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   padding-top: 30px;
   padding-left: 60px;
   padding-right: 60px;
   grid-auto-flow: dense;
-  grid-auto-rows: 400px 500px 300px;
+  grid-auto-rows: 400px 500px 300px; */
   /* Controls the width of each grid item in a row. Eg: 1st row: 400px, 2nd row: 500px, 3rd row: 300px */
 
+
+  columns: 3;
+  gap: 10px;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+
   .grid-image {
+    position: relative;
+    margin-bottom: 5px;
 
     img {
-      object-fit: cover;
+      /* object-fit: cover;
       height: 100%;
       width: 100%;
       border-radius: 5px;
+      animation: fadeIn ease 1s; */
+
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      animation: fadeIn ease 1s; 
     }
   }
 
@@ -881,5 +896,19 @@ path {
 
   .nav-divider {
     display: none;
+  }
+}
+
+
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
