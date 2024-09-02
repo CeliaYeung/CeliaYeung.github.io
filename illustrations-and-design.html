@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amaryllis Studio</title>
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- Icon library to show a hamburger menu on small screens for navbar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+
+  <!-- Jquery (Temporary) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="column-1">
+        <div class="logo">
+          <img src="images/amaryllis-studio-logo.png" alt="Amaryllis studio logo" />
+        </div>
+        <div class="website-title">
+          Amaryllis Studio
+        </div>
+      </div>
+      <div class="column-2">
+        <div class="navbar" id="navbar">
+          <div class="nav-item">
+            <a href="illustrations-and-design.html">Illustration & Design</a>
+            <img class="nav-underline active" src="images/new/Underline-2.png" src="underline" />
+          </div>
+          <div class="nav-item">
+            <a href="print-and-play.html">Print & play games</a>
+            <img class="nav-underline" src="images/new/Underline-2.png" src="underline" />
+          </div>
+          <div class="nav-item">
+            <a href="about.html">About</a>
+            <img class="nav-underline" src="images/new/Underline-2.png" src="underline" />
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="illustrations-header">
+      <img class="illustrations-header-image" src="images/illustrations-header-image.png"
+        alt="illustraions header image" />
+      <p class="illustrations-header-description">Pixels, precision, purpose and passion, all in one canvas ✦</p>
+    </div>
+
+    <!-- Tab links -->
+    <div class="illustrations-tab">
+      <button class="tablinks" onclick="openIllustrationCategory(event, 'illustrations')" id="illustrationDefaultTab">Illustrations</button>
+      <button class="tablinks" onclick="openIllustrationCategory(event, 'vector-art')">Vector art</button>
+      <button class="tablinks" onclick="openIllustrationCategory(event, '3d-modelling')">3D modelling</button>
+      <button class="tablinks" onclick="openIllustrationCategory(event, 'design')">Design</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="illustrations" class="illustrations tabcontent">
+      <div class="gallery-grid-wrapper illustrations" id="gallery-grid">
+        <script>
+          // https://imagekit.io/blog/lazy-loading-images-complete-guide/
+          // https://web.dev/articles/lazy-loading-images
+          const imageListIllustrations = document.querySelector(".gallery-grid-wrapper.illustrations");
+          async function populateImageData() {
+            const response = await fetch('../image-data.json');
+
+            const imagesData = await response.json();
+            let imageCounter = 0;
+            imagesData.map((image) => {
+              console.log(image);
+
+              if (image.type == "raster") {
+                if (imageCounter <= 6) {
+                  let newImageDiv = document.createElement("div");
+                  let newImage = document.createElement("img");
+                  newImageDiv.className = "grid-image";
+                  newImage.src = "../" + image.file;
+                  newImage.alt = image.name;
+                  newImageDiv.appendChild(newImage);
+                  imageListIllustrations.appendChild(newImageDiv);
+                  imageCounter++;
+
+                }
+                else {
+                  let newImageDiv = document.createElement("div");
+                  let newImage = document.createElement("img");
+                  newImageDiv.className = "grid-image";
+                  newImage.className = "lazy";
+                  newImage.src = "../images/placeholder.jpg";
+                  newImage.setAttribute('data-src', "../" + image.file);
+                  newImage.alt = image.name;
+                  newImageDiv.appendChild(newImage);
+                  imageListIllustrations.appendChild(newImageDiv);
+                  imageCounter++;
+                }
+              }
+            });
+          }
+
+          populateImageData();
+        </script>
+      </div>
+    </div>
+
+    <div id="vector-art" class="illustrations tabcontent">
+      <div class="gallery-grid-wrapper vector" id="gallery-grid">
+        <script>
+          // https://imagekit.io/blog/lazy-loading-images-complete-guide/
+          // https://web.dev/articles/lazy-loading-images
+          const imageListVector = document.querySelector(".gallery-grid-wrapper.vector");
+          async function populateImageData() {
+            const response = await fetch('../image-data.json');
+
+            const imagesData = await response.json();
+            let imageCounter = 0;
+            imagesData.map((image) => {
+              console.log(image);
+
+              if (image.type == "vector") {
+                if (imageCounter <= 6) {
+                  let newImageDiv = document.createElement("div");
+                  let newImage = document.createElement("img");
+                  newImageDiv.className = "grid-image";
+                  newImage.src = "../" + image.file;
+                  newImage.alt = image.name;
+                  newImageDiv.appendChild(newImage);
+                  imageListVector.appendChild(newImageDiv);
+                  imageCounter++;
+
+                }
+                else {
+                  let newImageDiv = document.createElement("div");
+                  let newImage = document.createElement("img");
+                  newImageDiv.className = "grid-image";
+                  newImage.className = "lazy";
+                  newImage.src = "../images/placeholder.jpg";
+                  newImage.setAttribute('data-src', "../" + image.file);
+                  newImage.alt = image.name;
+                  newImageDiv.appendChild(newImage);
+                  imageListVector.appendChild(newImageDiv);
+                  imageCounter++;
+                }
+              }
+            });
+          }
+
+          populateImageData();
+        </script>
+      </div>
+    </div>
+
+    <div id="3d-modelling" class="illustrations tabcontent">
+      <div class="gallery-grid-wrapper modelling" id="gallery-grid">
+        <script>
+          // https://imagekit.io/blog/lazy-loading-images-complete-guide/
+          // https://web.dev/articles/lazy-loading-images
+          const imageList3DModelling = document.querySelector(".gallery-grid-wrapper.modelling");
+          async function populateImageData() {
+            const response = await fetch('../image-data.json');
+
+            const imagesData = await response.json();
+            let imageCounter = 0;
+            imagesData.map((image) => {
+              console.log(image);
+
+              if (image.type == "3d-model") {
+                if (imageCounter <= 6) {
+                  let newImageDiv = document.createElement("div");
+                  let newImage = document.createElement("img");
+                  newImageDiv.className = "grid-image";
+                  newImage.src = "../" + image.file;
+                  newImage.alt = image.name;
+                  newImageDiv.appendChild(newImage);
+                  imageList3DModelling.appendChild(newImageDiv);
+                  imageCounter++;
+
+                }
+                else {
+                  let newImageDiv = document.createElement("div");
+                  let newImage = document.createElement("img");
+                  newImageDiv.className = "grid-image";
+                  newImage.className = "lazy";
+                  newImage.src = "../images/placeholder.jpg";
+                  newImage.setAttribute('data-src', "../" + image.file);
+                  newImage.alt = image.name;
+                  newImageDiv.appendChild(newImage);
+                  imageList3DModelling.appendChild(newImageDiv);
+                  imageCounter++;
+                }
+              }
+            });
+          }
+
+          populateImageData();
+        </script>
+      </div>
+    </div>
+
+    <div id="design" class="illustrations tabcontent">
+      <div class="gallery-grid-wrapper design" id="gallery-grid">
+        <script>
+          // https://imagekit.io/blog/lazy-loading-images-complete-guide/
+          // https://web.dev/articles/lazy-loading-images
+          const imageListDesign = document.querySelector(".gallery-grid-wrapper.design");
+          async function populateImageData() {
+            const response = await fetch('../image-data.json');
+
+            const imagesData = await response.json();
+            let imageCounter = 0;
+            imagesData.map((image) => {
+              console.log(image);
+
+              if (image.type == "design") {
+                if (imageCounter <= 6) {
+                  let newImageDiv = document.createElement("div");
+                  let newImage = document.createElement("img");
+                  newImageDiv.className = "grid-image";
+                  newImage.src = "../" + image.file;
+                  newImage.alt = image.name;
+                  newImageDiv.appendChild(newImage);
+                  imageListDesign.appendChild(newImageDiv);
+                  imageCounter++;
+
+                }
+                else {
+                  let newImageDiv = document.createElement("div");
+                  let newImage = document.createElement("img");
+                  newImageDiv.className = "grid-image";
+                  newImage.className = "lazy";
+                  newImage.src = "../images/placeholder.jpg";
+                  newImage.setAttribute('data-src', "../" + image.file);
+                  newImage.alt = image.name;
+                  newImageDiv.appendChild(newImage);
+                  imageListDesign.appendChild(newImageDiv);
+                  imageCounter++;
+                }
+              }
+            });
+          }
+
+          populateImageData();
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-media-links">
+        <span class="social-media-link">
+          <a href="#">
+            <img src="images/new/cara-icon.png" alt="Cara link" />
+          </a>
+        </span>
+        <span class="social-media-link">
+          <a href="#">
+            <img src="images/new/instagram-icon.png" alt="Instagram link" />
+          </a>
+        </span>
+        <span class="social-media-link">
+          <a href="#"><img src="images/new/envelope-icon.png" alt="Email link" /></a>
+        </span>
+      </div>
+      <div class="footer-copyright">&copy; Copyright Amaryllis Studio 2024</div>
+    </div>
+  </footer>
+
+</body>
+
+<!-- Javascripts -->
+<script src="app.js"></script>
+<!-- <script src="javascript/test.js"></script>
+<script src="javascript/image-carousel.js"></script> -->
+
+</html>

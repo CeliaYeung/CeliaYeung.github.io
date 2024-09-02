@@ -26,58 +26,43 @@
         <div class="logo">
           <img src="images/amaryllis-studio-logo.png" alt="Amaryllis studio logo" />
         </div>
-      </div>
-      <div class="column-2">
         <div class="website-title">
           Amaryllis Studio
         </div>
-        <div class="social-media-links">
-          <span class="social-media-link">
-            <a href="#">
-              <img src="images/icons/cara-icon.png" alt="Cara link" />
-            </a>
-          </span>
-          <span class="social-media-link">
-            <a href="#">
-              <img src="images/icons/instagram-icon.png" alt="Instagram link" />
-            </a>
-          </span>
-          <span class="social-media-link">
-            <a href="#"><img src="images/icons/envelope-icon.png" alt="Email link" /></a>
-          </span>
-        </div>
-        <div class="job-titles">
-          <span class="job-title-illustrator">ILLUSTRATOR</span>
-          <span class="seperator">✦</span>
-          <span class="job-title-game-designer">GAME DESIGNER</span>
-          <span class="seperator">✦</span>
-          <span class="job-title-developer">SOFTWARE DEVELOPER</span>
+      </div>
+      <div class="column-2">
+        <div class="navbar" id="navbar">
+          <div class="nav-item">
+            <a href="illustrations-and-design.html">Illustration & Design</a>
+            <img class="nav-underline" src="images/new/Underline-2.png" src="underline" />
+          </div>
+          <div class="nav-item">
+            <a href="print-and-play.html">Print & play games</a>
+            <img class="nav-underline" src="images/new/Underline-2.png" src="underline" />
+          </div>
+          <div class="nav-item">
+            <a href="about.html">About</a>
+            <img class="nav-underline" src="images/new/Underline-2.png" src="underline" />
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
-    </div>
-
-    <div class="navbar" id="navbar">
-      <a href="index.html" class="active">HOME</a>
-      <a href="illustrations-category.html">ILLUSTRATION & DESIGN</a>
-      <a href="print-and-play.html">PRINT & PLAY</a>
-      <a href="about.html">ABOUT</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
   </div>
 
   <div class="banner">
-    <div class="hero-banner-text">
-      <div class="child"></div>
-      <div class="child">
-        <div class="banner-content">
-          <div class="banner-heading">Welcome to Amaryllis Studio’s comfy corner of creativity!</div>
-          <div class="banner-description">Step into a world where comfy meets cuteness
-            <br /> ˏˋ°•*⁀➷ <br /><br />
-            Explore not only heartwarming artworks but also engaging print and play card games!<br />
-            <img class="star-gif" src="images/star-animation.gif" alt="Star gif" />
-          </div>
+    <div class="column-1">
+      <img src="./images/profile.png" alit="Profile picture" />
+    </div>
+    <div class="column-2">
+      <div class="banner-content">
+        <div class="banner-heading">Welcome to Amaryllis Studio's comfy corner of creativity!</div>
+        <div class="banner-description">Step into a world where comfy meets cuteness
+          <br /> ✦ <br /><br />
+          Explore not only heartwarming artworks but also engaging print and play card games!<br />
+          <img class="star-gif" src="images/star-animation.gif" alt="Star gif" />
         </div>
       </div>
     </div>
@@ -85,47 +70,60 @@
 
 
   <div class="sub-banner">
-    <section id="carousel">
-      <button class="arrow-button left-arrow"><span>&lt;</span></button>
-      <div class="carousel-wrapper">
-        <div class="image-list">
-          <script>
-            const imageList = document.querySelector(".image-list");
-            async function populateImageData() {
-              const response = await fetch('./image-data.json');
+    <div class="image-list">
+      <script>
+        const imageList = document.querySelector(".image-list");
+        async function populateImageData() {
+          const response = await fetch('./image-data.json');
+          let imageCounter = 0;
 
-              const imagesData = await response.json();
-              imagesData.map((image) => {
-                console.log(image);
+          const imagesData = await response.json();
+          imagesData.map((image) => {
+            console.log(image);
 
-                if (image.show_on_home == true) {
-                  let newImage = document.createElement("img");
-                  newImage.className = "image-in-carousel";
-                  newImage.src = image.file
-                  newImage.alt = image.name
-                  imageList.appendChild(newImage);
-                }
-              });
+            if (image.show_on_home == true && imageCounter < 6) {
+              imageCounter++;
+              let newImage = document.createElement("img");
+              newImage.className = "image-in-carousel";
+              newImage.src = image.file
+              newImage.alt = image.name
+              imageList.appendChild(newImage);
             }
+          });
+        }
 
-            populateImageData();
-          </script>
-        </div>
-      </div>
-      <button class="arrow-button right-arrow"><span>&gt;</span></button>
-    </section>
+        populateImageData();
+      </script>
+    </div>
   </div>
 
   <footer>
-    <div class="footer-text">&copy; Copyright Amaryllis Studio 2024</div>
+    <div class="footer-content">
+      <div class="social-media-links">
+        <span class="social-media-link">
+          <a href="#">
+            <img src="images/new/cara-icon.png" alt="Cara link" />
+          </a>
+        </span>
+        <span class="social-media-link">
+          <a href="#">
+            <img src="images/new/instagram-icon.png" alt="Instagram link" />
+          </a>
+        </span>
+        <span class="social-media-link">
+          <a href="#"><img src="images/new/envelope-icon.png" alt="Email link" /></a>
+        </span>
+      </div>
+      <div class="footer-copyright">&copy; Copyright Amaryllis Studio 2024</div>
+    </div>
   </footer>
 
 </body>
 
 <!-- Javascripts -->
 <script src="app.js"></script>
-<script src="javascript/test.js"></script>
-<script src="javascript/image-carousel.js"></script>
+<!-- <script src="javascript/test.js"></script>
+<script src="javascript/image-carousel.js"></script> -->
 
 
 </html>
