@@ -564,6 +564,12 @@
         "show_on_home": false
     },
     {
+        "name": "Slime crime game",
+        "file": "images/gallery/slime-crime-logo.jpg",
+        "type": "vector",
+        "show_on_home": false
+    },
+    {
         "name": "Panda warrior",
         "file": "images/gallery/panda-warrior.jpg",
         "type": "vector",
