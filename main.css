@@ -293,8 +293,6 @@ path {
   /* min-width: 1280px; */
   background-image: url("./images/new/hero-banner.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   height: 900px;
   width: 100%;
   /* position: absolute; */
@@ -305,16 +303,17 @@ path {
   padding-right: 120px;
 
   .column-1 {
-    width: 50%;
+    flex-basis: 50%;
     padding: 100px;
 
     img {
-      width: 100%;
+      max-height: 700px;
+      width: auto;
     }
   }
 
   .column-2 {
-    width: 50%;
+    flex-basis: 50%;
     height: fit-content;
     text-align: left;
 
@@ -387,15 +386,23 @@ path {
   /* Controls the width of each grid item in a row. Eg: 1st row: 400px, 2nd row: 500px, 3rd row: 300px */
 
 
-  columns: 3;
+
   gap: 10px;
   padding-top: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  &.three-columns {
+    columns: 3;
+  }
+
+  &.four-columns {
+    columns: 4;
+  }
 
   .grid-image {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     img {
       /* object-fit: cover;
@@ -407,7 +414,7 @@ path {
       max-width: 100%;
       height: auto;
       border-radius: 5px;
-      animation: fadeIn ease 1s; 
+      animation: fadeIn ease 1s;
     }
   }
 
@@ -542,13 +549,18 @@ path {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 50px;
+    justify-content: center;
+    /* padding-left: 160px;
+    padding-right: 160px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 
     .card {
-      flex-basis: 30%;
+      width: 350px;
       border-radius: 5px;
-      box-shadow: var(--dark-shadow);
+      border: 1px solid var(--background-lavender);
+      transition: transform 100ms ease-out;
 
       a {
         text-decoration: none;
@@ -577,7 +589,8 @@ path {
       }
 
       &:hover {
-        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2); */
+        transform: scale(1.10, 1.10);
       }
     }
   }
