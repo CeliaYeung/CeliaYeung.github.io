@@ -13,112 +13,107 @@
 
     <!-- Google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
     <!-- Jquery (Temporary) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="main">
-        <div class="header-subpages">
-            <div class="column-1">
+    <div class="top-header">
+        <div class="column-1">
+            <div class="logo">
+                <img src="../images/amaryllis-studio-logo.png" alt="Amaryllis studio logo" />
             </div>
-            <div class="column-2">
-                <div class="logo">
-                    <img src="../images/amaryllis-studio-logo.png" alt="Amaryllis studio logo" />
-                </div>
-                <div class="website-title">
-                    Amaryllis Studio
-                </div>
+            <div class="website-title">
+                Amaryllis Studio
             </div>
-            <div class="column-3">
-                <div class="social-media-links">
-                    <span class="social-media-link">
-                        <a href="#">
-                            <img src="../images/icons/cara-icon.png" alt="Cara link" />
-                        </a>
-                    </span>
-                    <span class="social-media-link">
-                        <a href="#">
-                            <img src="../images/icons/instagram-icon.png" alt="Instagram link" />
-                        </a>
-                    </span>
-                    <span class="social-media-link">
-                        <a href="#"><img src="../images/icons/envelope-icon.png" alt="Email link" /></a>
-                    </span>
+        </div>
+        <div class="column-2">
+            <div class="navbar" id="navbar">
+                <div class="nav-item">
+                    <a href="../illustrations-and-design.html">Illustration & Design</a>
+                    <img class="nav-underline" src="../images/new/Underline-2.png" src="underline" />
                 </div>
+                <div class="nav-item">
+                    <a href="../print-and-play.html">Print & play games</a>
+                    <img class="nav-underline active" src="../images/new/Underline-2.png" src="underline" />
+                </div>
+                <div class="nav-item">
+                    <a href="../about.html">About</a>
+                    <img class="nav-underline" src="../images/new/Underline-2.png" src="underline" />
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <p class="breadcrumbs">
+        <a href="../print-and-play.html">Print & play games</a>
+        <span class="breadcrumbs-seperator"> &gt; </span>
+        <span= class="active"> Slime crime </span>
+    </p> -->
+
+    <div class="card-game">
+        <div class="card-game-details">
+            <div class="card-game-image">
+                <img src="../images/bamboozle-logo.jpg" alt="Card game" />
+            </div>
+            <div class="card-game-description">
+                <div class="card-game-name">
+                    Bamboozle (2021)
+                </div>
+                <p><i>
+                        Who does not love berries? Alphen City is known for
+                        the harvesting of fresh blueberries. However the
+                        slimes on the outskirts of the city love these berries
+                        just as much and sometimes...they attack the city in
+                        an attempt to steal these berries! Thisis not the first
+                        time and itseemslike they are disguised as panda
+                        slimesto try and fool the guards. As mages and
+                        protectors of Alphen City are summoned to help
+                        these guardsfend off the slimes.
+                    </i></p>
+                <div class="card-game-status">
+                    <ul>
+                        <li><b>Game design:</b> Amaryllis studio</li>
+                        <li><b>Art and graphic design:</b> Amaryllis studio</li>
+                        <li><b>Card count:</b> 54</li>
+                        <li><b>Number of players:</b> 2-4</li>
+                        <li><b>Age:</b> 8+</li>
+                        <li><b>Approximate playing time:</b> 20-30 minutes</li>
+                    </ul>
+                </div>
+                <!-- <button>Download</button> -->
             </div>
         </div>
 
-        <div class="navbar-subpages" id="navbar">
-            <a href="../index.html">HOME</a>
-            <a href="../illustrations-category.html">ILLUSTRATION & DESIGN</a>
-            <a href="../print-and-play.html" class="active">PRINT & PLAY</a>
-            <a href="../about.html">ABOUT</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <div class="card-game-divider">
+            <img src="../images/separator-2.png" alt="separator" />
         </div>
-        <hr class="nav-divider">
 
-        <p class="breadcrumbs">
-            <a href="../print-and-play.html">Print & play</a>
-            <span class="breadcrumbs-seperator"> &gt; </span>
-            <span= class="active"> Bamboozle </span>
-        </p>
+        <div class="card-game-screenshots">
+            <img src="../images/card-games/bamboozle/screenshot.png" alt="Card game scheenshot" />
+            <img src="../images/card-games/bamboozle/screenshot-1.png" alt="Card game scheenshot" />
+            <img src="../images/card-games/bamboozle/screenshot-2.jpg" alt="Card game scheenshot" />
+        </div>
 
-        <div class="card-game">
-            <div class="card-game-name">
-                Bamboozle (2021)
-            </div>
-            <div class="card-game-details">
-                <div class="card-game-image">
-                    <img src="../images/bamboozle-logo.jpg" alt="Card game" />
+
+        <div class="card-game-divider">
+            <img src="../images/separator-2.png" alt="separator" />
+        </div>
+
+
+        <div class="card-game-links">
+            <div class="link blue">
+                <div class="header">
+                    <div class="inner-text"><b>✦ Downloads </b></div>
                 </div>
-                <div class="card-game-description">
-                    <p><i>
-                            Who does not love berries? Alphen City is known for
-                            the harvesting of fresh blueberries. However the
-                            slimes on the outskirts of the city love these berries
-                            just as much and sometimes...they attack the city in
-                            an attempt to steal these berries! Thisis not the first
-                            time and itseemslike they are disguised as panda
-                            slimesto try and fool the guards. As mages and
-                            protectors of Alphen City are summoned to help
-                            these guardsfend off the slimes.
-                        </i></p>
-                    <div class="card-game-status">
-                        <ul>
-                            <li><b>Game design:</b> Amaryllis studio</li>
-                            <li><b>Art and graphic design:</b> Amaryllis studio</li>
-                            <li><b>Card count:</b> 54</li>
-                            <li><b>Number of players:</b> 2-4</li>
-                            <li><b>Age:</b> 8+</li>
-                            <li><b>Approximate playing time:</b> 20-30 minutes</li>
-                        </ul>
-                    </div>
-                    <!-- <button>Download</button> -->
-                </div>
-            </div>
-
-            <div class="card-game-divider">
-                ────────────────── ✦⋅⋯°｡𖥸｡°⋅⋯✦ ──────────────────
-            </div>
-
-            <div class="card-game-screenshots">
-                <img src="../images/card-games/bamboozle/screenshot.png" alt="Card game scheenshot" />
-                <img src="../images/card-games/bamboozle/screenshot-1.png" alt="Card game scheenshot" />
-                <img src="../images/card-games/bamboozle/screenshot-2.jpg" alt="Card game scheenshot" />
-            </div>
-
-            <div class="card-game-divider">
-                ────────────────── ✦⋅⋯°｡𖥸｡°⋅⋯✦ ──────────────────
-            </div>
-
-            <div class="card-game-links">
-                <div class="link">
-                    <div class="header"><b>✦ Downloads </b></div>
+                <div class="inner-content">
                     <div class="content"><a href="../downloads/Bamboozle/Bamboozle Rules v2.0.pdf" download>Rules
                             v2</a></div>
                     <div class="content"><a href="../downloads/Bamboozle/Bamboozle Cards v2.0.pdf" download>Cards
@@ -126,25 +121,33 @@
                     <div class="content"><a href="../downloads/Bamboozle/Card Backs v2.0.pdf" download>Card backs
                             v2</a></div>
                 </div>
+            </div>
 
-                <div class="link">
-                    <div class="header"><b>✦ Play online </b></div>
+            <div class="link purple">
+                <div class="header">
+                    <div class="inner-text"><b>✦ Play online </b></div>
+                </div>
+                <div class="inner-content">
                     <div class="content"><a href="https://tabletopia.com/games/bamboozle-62rh5z/play-now">Tabletopia
                         </a></div>
                 </div>
-
-                <div class="link">
-                    <div class="header"><b>✦ Board game geek competition </b></div>
-                    <div class="content"><a
-                            href="https://boardgamegeek.com/thread/2856024/wip-bamboozle-2022-54-card-game-design-contest-con">
-                            https://boardgamegeek.com/thread/2856024/wip-bamboozle-2022-54-card-game-design-contest-con
-                        </a></div>
-                </div>
-
             </div>
-        </div>
 
+            <div class="link pink">
+                <div class="header">
+                    <div class="inner-text"><b>✦ Contest </b></div>
+                </div>
+                <div class="inner-content">
+                    <div class="content"><a
+                        href="https://boardgamegeek.com/thread/2856024/wip-bamboozle-2022-54-card-game-design-contest-con">
+                       BGG contest
+                    </a></div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
     <footer>
         <div class="footer-text">&copy; Copyright Amaryllis Studio 2024</div>
     </footer>

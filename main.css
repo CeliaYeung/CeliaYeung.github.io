@@ -5,6 +5,7 @@
   src: url(/fonts/wash_your_hand/Wash\Your\Hand.ttf);
 }
 
+
 /* Variables */
 :root {
   --navy: #3b4068;
@@ -34,20 +35,40 @@ body {
 }
 
 footer {
+  &.normal {
+    background-image: url("./images/new/footer.png");
+    height: 300px;
+    background-size: cover;
+    position: relative;
 
-  background-image: url("./images/new/footer.png");
-  height: 300px;
-  background-size: cover;
-  position: relative;
+    .footer-content {
+      position: absolute;
+      top: 65%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
 
-  .footer-content {
-    position: absolute;
-    top: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &.bottom {
+    background-image: url("./images/new/footer.png");
+    height: auto;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
     width: 100%;
 
+    .footer-content {
+      margin-top: 185px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .footer-content {
     .footer-copyright {
       padding-bottom: 25px;
       width: 300px;
@@ -87,7 +108,7 @@ path {
 } */
 
 /* Header */
-.header {
+.top-header {
   width: 100%;
   display: flex;
   flex-flow: row;
@@ -109,7 +130,7 @@ path {
 
     .website-title {
       flex-basis: 80%;
-      font-family: 'Boogaloo';
+      font-family: 'Belanosima';
       font-size: 30pt;
       text-wrap: nowrap;
       color: var(--navy);
@@ -581,9 +602,11 @@ path {
       .card-text {
         padding: 15px;
         color: var(--navy);
+        font-size: 16px;
 
         .card-name {
           margin: 0;
+          font-size: 20px;
           font-weight: bold;
         }
       }
@@ -599,6 +622,9 @@ path {
 .card-game {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 30px;
 
   .card-game-name {
     flex-basis: 100%;
@@ -606,13 +632,12 @@ path {
     /* font-family: 'Boogaloo'; */
     font-size: 26px;
     font-weight: bold;
-    text-align: center;
   }
 
   .card-game-details {
     display: flex;
     flex-wrap: wrap;
-    gap: 2%;
+    gap: 25px;
     margin-top: 30px;
 
     .card-game-image {
@@ -651,13 +676,26 @@ path {
     }
   }
 
-  .card-game-divider {
+  /* .card-game-divider {
     color: var(--lavender);
     text-align: center;
     margin: 0% auto;
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
+  } */
+
+  .card-game-divider {
+
+    display: block;
+    margin: 0 auto;
+
+    img {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      height: 30px;
+      width: auto;
+    }
   }
 
   .card-game-screenshots {
@@ -666,29 +704,127 @@ path {
     gap: 20px;
 
     img {
-      width: 450px;
+      border-radius: 5px;
+      width: 500px;
       object-fit: cover;
     }
   }
 
   .card-game-links {
-    .link {
-      color: var(--navy);
-      margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 
-      .header {
-        font-size: 18px;
+    .link {
+      &.blue {
+        border: 2px solid #738CC1;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        width: 350px;
+
+        .header {
+          font-size: 20px;
+          background-color: #E9F5FF;
+          border-radius: 5px 5px 0px 0px;
+          color: #52658E;
+          text-wrap: nowrap;
+
+          .inner-text {
+            padding: 15px;
+          }
+        }
+
+        .inner-content {
+          padding: 15px;
+
+          .content {
+            font-size: 18px;
+            font-weight: 500;
+
+            a {
+              text-decoration: none;
+              color: #52658E;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
       }
 
-      .content {
-        font-size: 16px;
+      &.purple {
+        border: 2px solid var(--lavender);
+        margin-bottom: 20px;
+        border-radius: 5px;
+        width: 350px;
 
-        a {
-          text-decoration: none;
-          color: #2e52ff;
+        .header {
+          font-size: 20px;
+          background-color: #E9E9FF;
+          border-radius: 5px 5px 0px 0px;
+          color: #675AA3;
+          text-wrap: nowrap;
 
-          &:hover {
-            text-decoration: underline;
+          .inner-text {
+            padding: 15px;
+          }
+        }
+
+        .inner-content {
+          padding: 15px;
+
+          .content {
+            font-size: 18px;
+            font-weight: 500;
+
+            a {
+              text-decoration: none;
+              color: #675AA3;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      &.pink {
+        border: 2px solid #CD9AD0;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        width: 350px;
+
+        .header {
+          font-size: 20px;
+          background-color: #FDE9FF;
+          border-radius: 5px 5px 0px 0px;
+          color: #815D80;
+          text-wrap: nowrap;
+
+          .inner-text {
+            padding: 15px;
+          }
+        }
+
+        .inner-content {
+          padding: 15px;
+
+          .content {
+            font-size: 18px;
+            font-weight: 500;
+
+            a {
+              text-decoration: none;
+              color: #815D80;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
         }
       }

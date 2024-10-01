@@ -13,108 +13,103 @@
 
     <!-- Google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
     <!-- Jquery (Temporary) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="main">
-        <div class="header-subpages">
-            <div class="column-1">
+    <div class="top-header">
+        <div class="column-1">
+            <div class="logo">
+                <img src="../images/amaryllis-studio-logo.png" alt="Amaryllis studio logo" />
             </div>
-            <div class="column-2">
-                <div class="logo">
-                    <img src="../images/amaryllis-studio-logo.png" alt="Amaryllis studio logo" />
-                </div>
-                <div class="website-title">
-                    Amaryllis Studio
-                </div>
+            <div class="website-title">
+                Amaryllis Studio
             </div>
-            <div class="column-3">
-                <div class="social-media-links">
-                    <span class="social-media-link">
-                        <a href="#">
-                            <img src="../images/icons/cara-icon.png" alt="Cara link" />
-                        </a>
-                    </span>
-                    <span class="social-media-link">
-                        <a href="#">
-                            <img src="../images/icons/instagram-icon.png" alt="Instagram link" />
-                        </a>
-                    </span>
-                    <span class="social-media-link">
-                        <a href="#"><img src="../images/icons/envelope-icon.png" alt="Email link" /></a>
-                    </span>
+        </div>
+        <div class="column-2">
+            <div class="navbar" id="navbar">
+                <div class="nav-item">
+                    <a href="../illustrations-and-design.html">Illustration & Design</a>
+                    <img class="nav-underline" src="../images/new/Underline-2.png" src="underline" />
                 </div>
+                <div class="nav-item">
+                    <a href="../print-and-play.html">Print & play games</a>
+                    <img class="nav-underline active" src="../images/new/Underline-2.png" src="underline" />
+                </div>
+                <div class="nav-item">
+                    <a href="../about.html">About</a>
+                    <img class="nav-underline" src="../images/new/Underline-2.png" src="underline" />
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <p class="breadcrumbs">
+        <a href="../print-and-play.html">Print & play games</a>
+        <span class="breadcrumbs-seperator"> &gt; </span>
+        <span= class="active"> Slime crime </span>
+    </p> -->
+
+    <div class="card-game">
+        <div class="card-game-details">
+            <div class="card-game-image">
+                <img src="../images/llama-logo.jpg" alt="Card game" />
+            </div>
+            <div class="card-game-description">
+                <div class="card-game-name">
+                    That's my llama (2023)
+                </div>
+                <p><i>
+                        It is the time of the year again! Every year, two teams
+                        in Llama Land will compete to see who can train all
+                        the llamas the fastest. Gather resources and use them
+                        wisely! Will team Llamanade or team Llamazing be
+                        the first to win?
+                    </i></p>
+                <div class="card-game-status">
+                    <ul>
+                        <li><b>Game design:</b> Amaryllis studio</li>
+                        <li><b>Art and graphic design:</b> Amaryllis studio</li>
+                        <li><b>Card count:</b> 9</li>
+                        <li><b>Number of players:</b> 2</li>
+                        <li><b>Age:</b> 8+</li>
+                        <li><b>Approximate playing time:</b> 25-35 minutes</li>
+                    </ul>
+                </div>
+                <!-- <button>Download</button> -->
             </div>
         </div>
 
-        <div class="navbar-subpages" id="navbar">
-            <a href="../index.html">HOME</a>
-            <a href="../illustrations-category.html">ILLUSTRATION & DESIGN</a>
-            <a href="../print-and-play.html" class="active">PRINT & PLAY</a>
-            <a href="../about.html">ABOUT</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <div class="card-game-divider">
+            <img src="../images/separator-2.png" alt="separator" />
         </div>
-        <hr class="nav-divider">
 
-        <p class="breadcrumbs">
-            <a href="../print-and-play.html">Print & play</a>
-            <span class="breadcrumbs-seperator"> &gt; </span>
-            <span= class="active"> That's my llama </span>
-        </p>
+        <div class="card-game-screenshots">
+            <img src="../images/card-games/llama/screenshot.png" alt="Card game scheenshot" />
+            <img src="../images/card-games/llama/screenshot-1.png" alt="Card game scheenshot" />
+            <img src="../images/card-games/llama/screenshot-2.png" alt="Card game scheenshot" />
+        </div>
 
-        <div class="card-game">
-            <div class="card-game-name">
-                That's my llama (2023)
-            </div>
-            <div class="card-game-details">
-                <div class="card-game-image">
-                    <img src="../images/llama-logo.jpg" alt="Card game" />
+
+        <div class="card-game-divider">
+            <img src="../images/separator-2.png" alt="separator" />
+        </div>
+
+
+        <div class="card-game-links">
+            <div class="link blue">
+                <div class="header">
+                    <div class="inner-text"><b>✦ Downloads </b></div>
                 </div>
-                <div class="card-game-description">
-                    <p><i>
-                            It is the time of the year again! Every year, two teams
-                            in Llama Land will compete to see who can train all
-                            the llamas the fastest. Gather resources and use them
-                            wisely! Will team Llamanade or team Llamazing be
-                            the first to win?
-                        </i></p>
-                    <div class="card-game-status">
-                        <ul>
-                            <li><b>Game design:</b> Amaryllis studio</li>
-                            <li><b>Art and graphic design:</b> Amaryllis studio</li>
-                            <li><b>Card count:</b> 9</li>
-                            <li><b>Number of players:</b> 2</li>
-                            <li><b>Age:</b> 8+</li>
-                            <li><b>Approximate playing time:</b> 25-35 minutes</li>
-                        </ul>
-                    </div>
-                    <!-- <button>Download</button> -->
-                </div>
-            </div>
-
-            <div class="card-game-divider">
-                ────────────────── ✦⋅⋯°｡𖥸｡°⋅⋯✦ ──────────────────
-            </div>
-
-            <div class="card-game-screenshots">
-                <img src="../images/card-games/llama/screenshot.png" alt="Card game scheenshot" />
-                <img src="../images/card-games/llama/screenshot-1.png" alt="Card game scheenshot" />
-                <img src="../images/card-games/llama/screenshot-2.png" alt="Card game scheenshot" />
-            </div>
-
-            <div class="card-game-divider">
-                ────────────────── ✦⋅⋯°｡𖥸｡°⋅⋯✦ ──────────────────
-            </div>
-
-            <div class="card-game-links">
-                <div class="link">
-                    <div class="header"><b>✦ Downloads </b></div>
+                <div class="inner-content">
                     <div class="content"><a href="../downloads/Llama/That's my llama rules v1.2.pdf" download>Rules
                             v1.2</a></div>
                     <div class="content"><a href="../downloads/Llama/That's my llama cards v1.2.pdf" download>Cards
@@ -133,27 +128,35 @@
                             backs - low ink
                             v1.2</a></div>
                 </div>
+            </div>
 
-                <div class="link">
-                    <div class="header"><b>✦ Play online </b></div>
+            <div class="link purple">
+                <div class="header">
+                    <div class="inner-text"><b>✦ Play online </b></div>
+                </div>
+                <div class="inner-content">
                     <div class="content"><a
                             href="https://steamcommunity.com/sharedfiles/filedetails/?id=2937323669">Tabletop simulator
                             v1.2
                         </a></div>
                 </div>
+            </div>
 
-                <div class="link">
-                    <div class="header"><b>✦ Board game geek competition </b></div>
+            <div class="link pink">
+                <div class="header">
+                    <div class="inner-text"><b>✦ Contest </b></div>
+                </div>
+                <div class="inner-content">
                     <div class="content"><a
                             href="https://boardgamegeek.com/thread/3046793/wip-thats-my-llama-2023-9-card-pnp-design-contest">
-                            https://boardgamegeek.com/thread/3046793/wip-thats-my-llama-2023-9-card-pnp-design-contestt
+                            BGG contest
                         </a></div>
                 </div>
-
             </div>
-        </div>
 
+        </div>
     </div>
+
     <footer>
         <div class="footer-text">&copy; Copyright Amaryllis Studio 2024</div>
     </footer>
