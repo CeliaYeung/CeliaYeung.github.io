@@ -130,7 +130,7 @@ path {
 
     .website-title {
       flex-basis: 80%;
-      font-family: 'Belanosima';
+      font-family: 'Boogaloo';
       font-size: 30pt;
       text-wrap: nowrap;
       color: var(--navy);
@@ -686,9 +686,9 @@ path {
   } */
 
   .card-game-divider {
-
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
     img {
       margin-top: 50px;
@@ -835,23 +835,24 @@ path {
 .profile {
   display: flex;
   flex-wrap: wrap;
-  gap: 5%;
-  padding-top: 60px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 25px;
+  /* align-items: center; */
 
   .profile-image {
-    flex: 35%;
+    flex-basis: 40%;
 
     img {
-      width: 100%;
-      object-fit: cover;
+      max-height: 500px;
+      width: auto;
     }
   }
 
   .profile-description {
     flex: 50%;
-    margin-top: 20px;
+    margin-top: 120px;
     color: var(--navy);
   }
 }
@@ -875,10 +876,11 @@ path {
   }
 
   img {
-    max-width: 80%;
+    /* max-width: 80%; */
     display: block;
-    width: 80%;
     margin: 0 auto;
+    height: auto;
+    width: 1200px;
   }
 
 }
