@@ -76,34 +76,51 @@
           const response = await fetch('../image-data.json');
 
           const imagesData = await response.json();
-          let imageCounter = 0;
+          let imageIllustrationsCounter = 0;
           imagesData.map((image) => {
             console.log(image);
 
             if (image.type == "raster") {
-              if (imageCounter <= 6) {
-                let newImageDiv = document.createElement("div");
-                let newImage = document.createElement("img");
-                newImageDiv.className = "grid-image";
-                newImage.src = "../" + image.file;
-                newImage.alt = image.name;
-                newImageDiv.appendChild(newImage);
-                imageListIllustrations.appendChild(newImageDiv);
-                imageCounter++;
+              let newImageDiv = document.createElement("div");
+              let newImage = document.createElement("img");
+              let fileName = image.file.split("/")[2].split(".")[0].split("-");
+              newImageDiv.className = "grid-image";
+              newImage.src = "../" + image.file;
+              newImage.alt = image.name;
+              newImage.id = generateImageID(fileName);
+              newImageDiv.appendChild(newImage);
+              imageListIllustrations.appendChild(newImageDiv);
 
-              }
-              else {
-                let newImageDiv = document.createElement("div");
-                let newImage = document.createElement("img");
-                newImageDiv.className = "grid-image";
+              if (imageIllustrationsCounter => 6) {
                 newImage.className = "lazy";
                 newImage.src = "../images/placeholder.jpg";
                 newImage.setAttribute('data-src', "../" + image.file);
-                newImage.alt = image.name;
-                newImageDiv.appendChild(newImage);
-                imageListIllustrations.appendChild(newImageDiv);
-                imageCounter++;
               }
+
+              imageIllustrationsCounter++;
+              // if (imageCounter <= 6) {
+              //   let newImageDiv = document.createElement("div");
+              //   let newImage = document.createElement("img");
+              //   newImageDiv.className = "grid-image";
+              //   newImage.src = "../" + image.file;
+              //   newImage.alt = image.name;
+              //   newImageDiv.appendChild(newImage);
+              //   imageListIllustrations.appendChild(newImageDiv);
+              //   imageCounter++;
+
+              // }
+              // else {
+              //   let newImageDiv = document.createElement("div");
+              //   let newImage = document.createElement("img");
+              //   newImageDiv.className = "grid-image";
+              //   newImage.className = "lazy";
+              //   newImage.src = "../images/placeholder.jpg";
+              //   newImage.setAttribute('data-src', "../" + image.file);
+              //   newImage.alt = image.name;
+              //   newImageDiv.appendChild(newImage);
+              //   imageListIllustrations.appendChild(newImageDiv);
+              //   imageCounter++;
+              // }
             }
           });
         }
@@ -123,34 +140,51 @@
           const response = await fetch('../image-data.json');
 
           const imagesData = await response.json();
-          let imageCounter = 0;
+          let imageVectorCounter = 0;
           imagesData.map((image) => {
             console.log(image);
 
             if (image.type == "vector") {
-              if (imageCounter <= 6) {
-                let newImageDiv = document.createElement("div");
-                let newImage = document.createElement("img");
-                newImageDiv.className = "grid-image";
-                newImage.src = "../" + image.file;
-                newImage.alt = image.name;
-                newImageDiv.appendChild(newImage);
-                imageListVector.appendChild(newImageDiv);
-                imageCounter++;
+              let newImageDiv = document.createElement("div");
+              let newImage = document.createElement("img");
+              let fileName = image.file.split("/")[2].split(".")[0].split("-");
+              newImageDiv.className = "grid-image";
+              newImage.src = "../" + image.file;
+              newImage.alt = image.name;
+              newImage.id = generateImageID(fileName);
+              newImageDiv.appendChild(newImage);
+              imageListVector.appendChild(newImageDiv);
 
-              }
-              else {
-                let newImageDiv = document.createElement("div");
-                let newImage = document.createElement("img");
-                newImageDiv.className = "grid-image";
+              if (imageVectorCounter => 6) {
                 newImage.className = "lazy";
                 newImage.src = "../images/placeholder.jpg";
                 newImage.setAttribute('data-src', "../" + image.file);
-                newImage.alt = image.name;
-                newImageDiv.appendChild(newImage);
-                imageListVector.appendChild(newImageDiv);
-                imageCounter++;
               }
+
+              imageVectorCounter++;
+              // if (imageCounter <= 6) {
+              //   let newImageDiv = document.createElement("div");
+              //   let newImage = document.createElement("img");
+              //   newImageDiv.className = "grid-image";
+              //   newImage.src = "../" + image.file;
+              //   newImage.alt = image.name;
+              //   newImageDiv.appendChild(newImage);
+              //   imageListVector.appendChild(newImageDiv);
+              //   imageCounter++;
+
+              // }
+              // else {
+              //   let newImageDiv = document.createElement("div");
+              //   let newImage = document.createElement("img");
+              //   newImageDiv.className = "grid-image";
+              //   newImage.className = "lazy";
+              //   newImage.src = "../images/placeholder.jpg";
+              //   newImage.setAttribute('data-src', "../" + image.file);
+              //   newImage.alt = image.name;
+              //   newImageDiv.appendChild(newImage);
+              //   imageListVector.appendChild(newImageDiv);
+              //   imageCounter++;
+              // }
             }
           });
         }
@@ -170,34 +204,51 @@
           const response = await fetch('../image-data.json');
 
           const imagesData = await response.json();
-          let imageCounter = 0;
+          let image3DModelCounter = 0;
           imagesData.map((image) => {
             console.log(image);
 
             if (image.type == "3d-model") {
-              if (imageCounter <= 6) {
-                let newImageDiv = document.createElement("div");
-                let newImage = document.createElement("img");
-                newImageDiv.className = "grid-image";
-                newImage.src = "../" + image.file;
-                newImage.alt = image.name;
-                newImageDiv.appendChild(newImage);
-                imageList3DModelling.appendChild(newImageDiv);
-                imageCounter++;
+              let newImageDiv = document.createElement("div");
+              let newImage = document.createElement("img");
+              let fileName = image.file.split("/")[2].split(".")[0].split("-");
+              newImageDiv.className = "grid-image";
+              newImage.src = "../" + image.file;
+              newImage.alt = image.name;
+              newImage.id = generateImageID(fileName);
+              newImageDiv.appendChild(newImage);
+              imageList3DModelling.appendChild(newImageDiv);
 
-              }
-              else {
-                let newImageDiv = document.createElement("div");
-                let newImage = document.createElement("img");
-                newImageDiv.className = "grid-image";
+              if (image3DModelCounter => 6) {
                 newImage.className = "lazy";
                 newImage.src = "../images/placeholder.jpg";
                 newImage.setAttribute('data-src', "../" + image.file);
-                newImage.alt = image.name;
-                newImageDiv.appendChild(newImage);
-                imageList3DModelling.appendChild(newImageDiv);
-                imageCounter++;
               }
+
+              image3DModelCounter++;
+              // if (imageCounter <= 6) {
+              //   let newImageDiv = document.createElement("div");
+              //   let newImage = document.createElement("img");
+              //   newImageDiv.className = "grid-image";
+              //   newImage.src = "../" + image.file;
+              //   newImage.alt = image.name;
+              //   newImageDiv.appendChild(newImage);
+              //   imageList3DModelling.appendChild(newImageDiv);
+              //   imageCounter++;
+
+              // }
+              // else {
+              //   let newImageDiv = document.createElement("div");
+              //   let newImage = document.createElement("img");
+              //   newImageDiv.className = "grid-image";
+              //   newImage.className = "lazy";
+              //   newImage.src = "../images/placeholder.jpg";
+              //   newImage.setAttribute('data-src', "../" + image.file);
+              //   newImage.alt = image.name;
+              //   newImageDiv.appendChild(newImage);
+              //   imageList3DModelling.appendChild(newImageDiv);
+              //   imageCounter++;
+              // }
             }
           });
         }
@@ -222,29 +273,51 @@
             console.log(image);
 
             if (image.type == "design") {
-              if (imageCounter <= 6) {
-                let newImageDiv = document.createElement("div");
-                let newImage = document.createElement("img");
-                newImageDiv.className = "grid-image";
-                newImage.src = "../" + image.file;
-                newImage.alt = image.name;
-                newImageDiv.appendChild(newImage);
-                imageListDesign.appendChild(newImageDiv);
-                imageCounter++;
+              let newImageDiv = document.createElement("div");
+              let newImage = document.createElement("img");
+              let fileName = image.file.split("/")[2].split(".")[0].split("-");
+              newImageDiv.className = "grid-image";
+              newImage.src = "../" + image.file;
+              newImage.alt = image.name;
+              newImage.id = generateImageID(fileName);
+              newImageDiv.appendChild(newImage);
+              imageListDesign.appendChild(newImageDiv);
 
-              }
-              else {
-                let newImageDiv = document.createElement("div");
-                let newImage = document.createElement("img");
-                newImageDiv.className = "grid-image";
+              if (imageCounter => 6) {
                 newImage.className = "lazy";
                 newImage.src = "../images/placeholder.jpg";
                 newImage.setAttribute('data-src', "../" + image.file);
-                newImage.alt = image.name;
-                newImageDiv.appendChild(newImage);
-                imageListDesign.appendChild(newImageDiv);
-                imageCounter++;
               }
+
+              imageCounter++;
+
+
+              // if (imageCounter <= 6) {
+              //   let newImageDiv = document.createElement("div");
+              //   let newImage = document.createElement("img");
+              //   let fileName = image.file.split("/")[2].split(".")[0].split("-");
+              //   newImageDiv.className = "grid-image";
+              //   newImage.src = "../" + image.file;
+              //   newImage.alt = image.name;
+              //   newImage.id = generateImageID(fileName);
+              //   newImageDiv.appendChild(newImage);
+              //   imageListDesign.appendChild(newImageDiv);
+              //   imageCounter++;
+
+              // }
+              // else {
+              //   let newImageDiv = document.createElement("div");
+              //   let newImage = document.createElement("img");
+              //   newImageDiv.className = "grid-image";
+              //   newImage.className = "lazy";
+              //   newImage.id = image.name;
+              //   newImage.src = "../images/placeholder.jpg";
+              //   newImage.setAttribute('data-src', "../" + image.file);
+              //   newImage.alt = image.name;
+              //   newImageDiv.appendChild(newImage);
+              //   imageListDesign.appendChild(newImageDiv);
+              //   imageCounter++;
+              // }
             }
           });
         }
@@ -274,6 +347,15 @@
       <div class="footer-copyright">&copy; Copyright Amaryllis Studio 2024</div>
     </div>
   </footer>
+
+
+  <!-- Image Modal -->
+  <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img -->
+  <div id="imageDisplayModal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
 
 </body>
 
