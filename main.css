@@ -131,7 +131,7 @@ path {
     .website-title {
       flex-basis: 80%;
       font-family: 'Boogaloo';
-      font-size: 30pt;
+      font-size: 52px;
       text-wrap: nowrap;
       color: var(--navy);
     }
@@ -434,9 +434,9 @@ path {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
   gap: 15px;
+  margin: 0 auto;
+  width: 80%;
   padding-top: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
 
   &.three-columns {
     grid-template-columns: repeat(3, 1fr);
@@ -631,7 +631,7 @@ path {
     flex-basis: 100%;
     color: var(--navy);
     /* font-family: 'Boogaloo'; */
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
   }
 
@@ -863,7 +863,7 @@ path {
 
   .contact-description {
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 45%;
     color: #fff;
 
@@ -881,7 +881,7 @@ path {
     display: block;
     margin: 0 auto;
     height: auto;
-    width: 1200px;
+    width: 1100px;
   }
 
 }
@@ -1083,8 +1083,8 @@ path {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
-    max-height: 100vh;
+    height: 80%;
+    object-fit: contain;
   }
 
   .modal-caption {
