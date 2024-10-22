@@ -148,11 +148,38 @@ path {
       color: var(--navy);
     }
 
+    /* Responsive --small-screen-width */
+    @media screen and (max-width: 576px) {
+      .logo img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .website-title {
+        font-size: var(--large-heading-font);
+      }
+    }
+
   }
 
   .column-2 {
     align-self: center;
     margin-top: 15px;
+  }
+}
+
+/* Responsive --small-screen-width */
+@media screen and (max-width: 576px) {
+  .top-header {
+    width: 100%;
+
+    .column-1 {
+      padding-left: 15px;
+    }
+
+    .column-2 {
+      padding-right: 15px;
+    }
   }
 }
 
@@ -265,6 +292,48 @@ path {
   }
 }
 
+/* Responsive --small-screen-width */
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column;
+    padding: 0px;
+
+    .column-1 {
+      padding: 0px;
+      padding-top: 100px;
+
+      img {
+        max-height: 400px;
+      }
+    }
+
+    .column-2 {
+      width: 80%;
+
+      .banner-content {
+        margin-top: 25px;
+
+
+        .banner-heading {
+          font-size: var(--medium-heading-font);
+          width: 100%;
+        }
+
+        .banner-description {
+          font-size: var(--medium-body-font);
+          width: 100%;
+
+          .star-gif {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .sub-banner {
   background-image: url("./images/sub-banner-website.png");
   background-size: cover;
@@ -276,7 +345,8 @@ path {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 15px;
-    padding: 100px;
+    width: 80%;
+    margin: 0 auto;
 
     .image-in-carousel {
       flex-grow: 1;
@@ -286,6 +356,14 @@ path {
       min-width: 500px;
       height: 600px;
       object-fit: cover;
+    }
+
+    /* Responsive --small-screen-width */
+    @media screen and (max-width: 576px) {
+      .image-in-carousel {
+        height: 400px;
+        min-width: 300px;
+      }
     }
   }
 }
@@ -748,14 +826,14 @@ path {
 
 /* Responsive */
 @media screen and (max-width: 600px) {
-  .top-header {
+  /* .top-header {
     .column-1 {
       .logo img {
         width: 80px;
         height: 80px;
       }
     }
-  }
+  } */
 
   .navbar {
     .nav-item {
