@@ -1,5 +1,29 @@
 [
     {
+        "name": "Squid witch",
+        "file": "images/gallery/squid-witch.jpg",
+        "type": "raster",
+        "show_on_home": true
+    },
+    {
+        "name": "Cupcake boo",
+        "file": "images/gallery/cupcake-boo.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Skeleton panda",
+        "file": "images/gallery/skeleton-panda.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
+        "name": "Halloween party",
+        "file": "images/gallery/halloween-party.jpg",
+        "type": "raster",
+        "show_on_home": false
+    },
+    {
         "name": "Lighthouse postcard",
         "file": "images/gallery/lighthouse-postcard.jpg",
         "type": "raster",

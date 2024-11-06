@@ -29,6 +29,20 @@
 //   })
 // }
 
+
+
+// Responsive side navbar
+function showSideNavbar() {
+  document.getElementById("side-navbar").style.width = "250px";
+  // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.getElementById("side-navbar-background").style.display = "block";
+}
+
+function hideSideNavbar() {
+  document.getElementById("side-navbar").style.width = "0";
+  document.getElementById("side-navbar-background").style.display = "none";
+}
+
 window.onload = function () {
 
   /* Lazy load images */
