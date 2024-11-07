@@ -762,6 +762,8 @@ path {
 
 
 .card-grid {
+  padding-left: 25px;
+  padding-right: 25px;
 
   &.two-col {
     display: flex;
@@ -856,7 +858,7 @@ path {
 
   .card-game-details {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 25px;
     margin-top: 30px;
 
@@ -903,6 +905,13 @@ path {
     }
   }
 
+  /* Responsive --medium-screen-width */
+  @media screen and (max-width: 768px) {
+    .card-game-details {
+      flex-direction: column;
+    }
+  }
+
   .card-game-divider {
     display: flex;
     justify-content: center;
@@ -925,6 +934,22 @@ path {
       border-radius: 5px;
       width: 500px;
       object-fit: cover;
+      flex-grow: 1;
+    }
+
+
+    /* Responsive --medium-screen-width */
+    @media screen and (max-width: 360px) {
+      img {
+        width: 250px;
+      }
+    }
+
+    /* Responsive --medium-screen-width */
+    @media (min-width: 360px) and (max-width: 576px) {
+      img {
+        width: 300px;
+      }
     }
   }
 
@@ -1057,6 +1082,9 @@ path {
   max-width: 1200px;
   margin: 0 auto;
   gap: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: center;
 
   .profile-image {
     flex-basis: 40%;
@@ -1064,6 +1092,13 @@ path {
     img {
       max-height: 500px;
       width: auto;
+    }
+
+    /* Responsive --medium-screen-width */
+    @media screen and (max-width: 360px) {
+      img {
+        max-height: 300px;
+      }
     }
   }
 
@@ -1078,6 +1113,25 @@ path {
 
     .profile-description-content {
       font-size: var(--medium-body-font);
+    }
+
+    /* Responsive --medium-screen-width */
+    @media screen and (max-width: 360px) {
+      .profile-description-title {
+        font-size: var(--small-heading-font);
+      }
+
+      .profile-description-content {
+        font-size: var(--small-body-font);
+      }
+
+    }
+  }
+
+  /* Responsive --medium-screen-width */
+  @media screen and (max-width: 360px) {
+    .profile-description {
+      margin-top: 20px;
     }
   }
 }
@@ -1100,6 +1154,17 @@ path {
       font-size: var(--medium-body-font);
     }
 
+    /* Responsive --medium-screen-width */
+    @media screen and (max-width: 360px) {
+      .contact-description-title {
+        font-size: var(--medium-body-font);
+      }
+  
+      .contact-description-content {
+        font-size: var(--small-body-font);
+      }
+    }
+
     a {
       color: #fff;
     }
@@ -1110,6 +1175,8 @@ path {
     margin: 0 auto;
     height: auto;
     width: 1100px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
 }
@@ -1119,6 +1186,8 @@ path {
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
+  padding-left: 25pX;
+  padding-right: 25px;
 
   .illustrations-header-image {
     width: 250px;
@@ -1129,6 +1198,7 @@ path {
   }
 
   .illustrations-header-description {
+    text-align: center;
     font-weight: 500;
     font-style: italic;
     font-size: var(--medium-body-font);
@@ -1147,13 +1217,15 @@ path {
   margin: 0 auto;
   justify-content: center;
   padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   .tablinks {
     border: none;
     font-size: var(--medium-body-font);
     font-family: 'Nunito';
     font-weight: 500;
-    background-color: transparent;
+    background-color: #f3f1f4;
     color: var(--navy);
     border-radius: 10px;
     padding: 5px 10px;
